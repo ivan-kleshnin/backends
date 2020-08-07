@@ -17,13 +17,13 @@ by Roy Fielding. It's easy to judge with a hindsight, of course, but the point i
 So what next? Many original questions on how to approach API remain and new ones keep emerging. 
 "The perfect API" now looks less achievable then ever, despite all the collective effort of scientists, engineers, programmers and all the other.
 
-### 🔭 Custom GraphQL API
+### 🔭 1. Custom GraphQL API
 
 Examples: Apollo-Server. 
 
 TODO describe PROS and CONS
 
-### 🔭 GraphQL &rarr; SQL (+ alike relational)
+### 🔭 2. GraphQL &rarr; SQL (+ alike relational)
 
 Can be runtime or pregenerated.
 
@@ -31,7 +31,7 @@ Examples: JoinMonster, SQLMancer.
 
 TODO describe PROS and CONS
 
-### 🔭 GraphQL &rarr; Cypher (+ alike graph)
+### 🔭 3. GraphQL &rarr; Cypher (+ alike graph)
 
 Can be runtime or pregenerated.
 
@@ -39,7 +39,7 @@ Examples: [Neo4J-GraphQL-JS](https://github.com/neo4j-graphql/neo4j-graphql-js)
 
 TODO describe PROS and CONS
  
-### 🔭 DB &rarr; GraphQL API
+### 🔭 4. Relational DB &rarr; GraphQL API
 
 Can be runtime or pregenerated.
 
@@ -47,19 +47,23 @@ Examples: PostGraphile, SubZero, [Super-Graph](https://github.com/dosco/super-gr
 
 TODO describe PROS and CONS
 
-### 🔭 Relational DB &larr; Custom Code &rarr; GraphQL API
+### 🔭 5. Graph DB &rarr; GraphQL API
+
+(not aware of any)
+
+### 🔭 6. Relational DB &larr; Custom Code &rarr; GraphQL API
 
 Examples: Prisma (ecosystem)
 
 TODO describe PROS and CONS
 
-### 🔭 Relational DB &larr; Custom Data via UI &rarr; GraphQL API
+### 🔭 7. Relational DB &larr; Custom Data via UI &rarr; GraphQL API
 
 Examples: [GraphCMS](https://graphcms.com/).
 
 TODO describe PROS and CONS
 
-### 🔭 Relational DB &larr; GraphQL Types &rarr; GraphQL API
+### 🔭 8. Relational DB &larr; GraphQL Types &rarr; GraphQL API
 
 Mostly pregenerated.
 
@@ -67,13 +71,13 @@ Examples: Hasura
 
 TODO describe PROS and CONS
 
-### 🔭 Graph DB &larr; GraphQL Types &rarr; GraphQL API
+### 🔭 9. Graph DB &larr; GraphQL Types &rarr; GraphQL API
 
 Examples: FaunaDB.
 
 TODO describe PROS and CONS
 
-### 🔭 GraphQL-speaking DBs
+### 🔭 10. GraphQL-speaking DBs
 
 Examples: [Dgraph](https://dgraph.io/).
 
