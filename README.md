@@ -53,6 +53,12 @@ Examples: Prisma (ecosystem)
 
 TODO describe PROS and CONS
 
+### 🔭 Relational DB &larr; Custom Data via UI &rarr; GraphQL API
+
+Examples: [GraphCMS](https://graphcms.com/).
+
+TODO describe PROS and CONS
+
 ### 🔭 Relational DB &larr; GraphQL Types &rarr; GraphQL API
 
 Mostly pregenerated.
@@ -61,7 +67,7 @@ Examples: Hasura
 
 TODO describe PROS and CONS
 
-### 🔭 Graph DB &larr; GraphQL Types &rarr;  GraphQL API
+### 🔭 Graph DB &larr; GraphQL Types &rarr; GraphQL API
 
 Examples: FaunaDB.
 
@@ -69,9 +75,10 @@ TODO describe PROS and CONS
 
 ### 🔭 GraphQL-speaking DBs
 
-Examples: Dgraph.
+Examples: [Dgraph](https://dgraph.io/).
 
 TODO describe PROS and CONS
 
-[graphql]: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/graphql/graphql.png
+---
 
+[graphql]: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/graphql/graphql.png
