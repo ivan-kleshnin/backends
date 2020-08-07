@@ -105,7 +105,7 @@ Basic API generator. Written in Go (can be &plusmn;).
 &plusmn; Automagic GraphQL API (magic vs boilerplate)<br/>
 &plus; Takes care of Migrations<br/>
 &plus; no N+1 and derivative problems<br/>
-&minus; API can't be derived from tables in general. Requires an extra API layer and many meta-data hints in DB.br/>
+&minus; API can't be derived from tables in general. Requires an extra API layer and many meta-data hints in DB.<br/>
 &plus; Deployment freedom<br/>
 &minus; Performance (runtime query parsing is expensive)<br/> 
 &minus; Performance (potential drops for join-heavy cases)<br/> 
