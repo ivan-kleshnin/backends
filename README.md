@@ -23,7 +23,7 @@ TODO: redefine pros and cons per vendor, not per category. Many of pros and cons
 
 #### Examples
 
-- [Firebase](https://firebase.google.com/?hl=ru)<br/>
+👉 [Firebase](https://firebase.google.com/?hl=ru)<br/>
 Used to be considered expensive, now is fine in comparison ;) Realtime out of the box.<br/>
 Limited filtering and data-modelling capabilities.
 
@@ -38,7 +38,7 @@ Limited filtering and data-modelling capabilities.
 
 #### Examples
 
-- [Apollo-Server](https://www.apollographql.com/docs/apollo-server/) + [Dataloader](https://github.com/graphql/dataloader)<br/>
+👉 [Apollo-Server](https://www.apollographql.com/docs/apollo-server/) + [Dataloader](https://github.com/graphql/dataloader)<br/>
 Pretty good and intuitive tools.
 
 #### Pros & Cons
@@ -54,10 +54,10 @@ Pretty good and intuitive tools.
 
 #### Examples
 
-- [Join-Monster](https://github.com/join-monster/join-monster)<br/> 
+👉 [Join-Monster](https://github.com/join-monster/join-monster)<br/> 
 Seems abandoned. Only basic sorting! Slow, according to feedback. :|
 
-- [SQLMancer](https://github.com/danielrearden/sqlmancer)<br/>
+👉 [SQLMancer](https://github.com/danielrearden/sqlmancer)<br/>
 Draft state. Going for a full rewrite a.t.m :|
 
 #### Pros & Cons
@@ -74,7 +74,7 @@ Draft state. Going for a full rewrite a.t.m :|
 
 #### Examples 
 
-- [Neo4J-GraphQL-JS](https://github.com/neo4j-graphql/neo4j-graphql-js) (GraphQL &rarr; Cypher)<br/>
+👉 [Neo4J-GraphQL-JS](https://github.com/neo4j-graphql/neo4j-graphql-js) (GraphQL &rarr; Cypher)<br/>
 Draft state.
 
 #### Pros & Cons
@@ -91,13 +91,13 @@ Draft state.
 
 #### Examples
 
-- [PostGraphile](https://www.graphile.org/postgraphile/)<br/>
+👉 [PostGraphile](https://www.graphile.org/postgraphile/)<br/>
 Interesting project, many unique ideas. Small team – slow progress.
 
-- [subZero](https://subzero.cloud/)<br/>
+👉 [subZero](https://subzero.cloud/)<br/>
 Kinda like cloud-only PostGraphile. Doesn't look like in active development.
 
-- [Super-Graph](https://github.com/dosco/super-graph)<br/>
+👉 [Super-Graph](https://github.com/dosco/super-graph)<br/>
 Basic API generator. Written in Go (can be &plusmn;).
 
 #### Pros & Cons
@@ -124,9 +124,9 @@ Not aware of any
 
 #### Examples
 
-- [Prisma + ecosystem](https://www.prisma.io/)<br/>
+👉 [Prisma + ecosystem](https://www.prisma.io/)<br/>
 I have little idea what Prisma-2 is and what is provides. They are constantly changing their focus so I lost the track and interest :(
-Got $$$ investments.
+Got $$$ investments, spent them on site design probably :shrug:
 
 #### Pros & Cons
 
@@ -136,23 +136,22 @@ TODO describe
 
 #### Examples
 
-- [GraphCMS](https://graphcms.com/).<br/>
-...
+👉 [GraphCMS](https://graphcms.com/).<br/>
+Good UI. Kinda buggy. Pretty expensive at the moment.<br/>
 
 &plusmn; Automagic GraphQL API (magic vs boilerplate)<br/>
 &plus; Takes care of Migrations<br/> 
 &plusmn; Performance (potential drops for join-heavy queries)<br/>
 &plus; Single API layer in simple cases<br/>
 &minus; Extra API layer in other cases<br/>
-&minus; Pretty expensive at the moment<br/>
 
 ### 🔮 8. Relational DB &larr; GraphQL Types &rarr; GraphQL API
 
 #### Examples
 
-- [Hasura](https://hasura.io/)<br/>
-Interesting project. Seem to know their stuff. Got $$$ investments, gain traction recently.<br/>
-Good docs (esp. in comparison), many examples, established a community.
+👉 [Hasura](https://hasura.io/)<br/>
+Interesting project. Seem to know their stuff. Got $$$ investments, reinvested in development (unlike Prisma)<br/>
+Gains traction recently. Good docs in comparison, many examples, established a community.<br/>
 
 &plusmn; Automagic GraphQL API (magic vs boilerplate)<br/>
 &plus; Takes care of Migrations<br/> 
@@ -167,8 +166,10 @@ Good docs (esp. in comparison), many examples, established a community.
 
 #### Examples
 
-- [FaunaDB](https://fauna.com/)<br/>
-Very limited filtering and sorting capabilities.
+👉 [FaunaDB](https://fauna.com/)<br/>
+Looks promising. Very limited filtering and sorting capabilities.<br/>
+Supports two languages: FQL (main) and GraphQL (basic, beta).<br/> 
+Promise to add even more languages (instead of focusing) :shrug:<br/> 
 
 #### Pros & Cons
 
@@ -184,8 +185,9 @@ Very limited filtering and sorting capabilities.
 
 #### Examples
 
-- [Dgraph](https://dgraph.io/)<br/>
-...
+👉 [Dgraph](https://dgraph.io/)<br/>
+Looks promising. Sparse docs. Supports two languages: GraphQL&plusmn; vs GraphQL.<br/>
+The question of which-to-use-when is not addressed in docs :shrug:
 
 #### Pros & Cons
 
