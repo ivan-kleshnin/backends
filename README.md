@@ -23,8 +23,9 @@ Note: some of the following pros and cons are probably vendor- and not category-
 
 #### Examples
 
-[Firebase](https://firebase.google.com/?hl=ru)<br/>
-Used to be considered expensive, now seems fine in comparison ;) Realtime out of the box.
+- [Firebase](https://firebase.google.com/?hl=ru)<br/>
+Used to be considered expensive, now is fine in comparison ;) Realtime out of the box.<br/>
+Limited filtering and data-modelling capabilities.
 
 #### Pros & Cons
 
@@ -37,15 +38,16 @@ Used to be considered expensive, now seems fine in comparison ;) Realtime out of
 
 #### Examples
 
-[Apollo-Server](https://www.apollographql.com/docs/apollo-server/) + [Dataloader](https://github.com/graphql/dataloader)<br/>
-A pretty good and intuitive tool.
+- [Apollo-Server](https://www.apollographql.com/docs/apollo-server/) + [Dataloader](https://github.com/graphql/dataloader)<br/>
+Pretty good and intuitive tools.
 
 #### Pros & Cons
 
 &plusmn; Custom GraphQL API (magic vs boilerplate)
-&plusmn; Custom Migrations (magic vs boilerplate)
+&minus; Custom Migrations
 &minus; N+1 problem: Dataloader helps with Child &rarr; Parent, fails in Parent &rarr; Child (filtering is pushed from DB to App)
-&plus; No extra API layer in simple cases<br/>
+&minus; GraphQL to SQL is too complex to inline in your business logic
+&plus; Single API layer<br/>
 &plus; Deployment freedom<br/>
 
 ### 🔭 2. Runtime GraphQL Query &rarr; Relational Query
@@ -60,35 +62,53 @@ Draft state. Going for a full rewrite a.t.m :|
 
 #### Pros & Cons
 
-TODO describe
+&plusmn; Custom GraphQL API (magic vs boilerplate)<br/>
+&minus; Custom Migrations
+&plus; no N+1 and derivative problems<br/>
+&plus; Single API layer<br/>
+&plus; Deployment freedom<br/>
+&minus; Performance (runtime query parsing is expensive)
+&minus; Performance (potential drops for join-heavy cases)
 
 ### 🔭 3. Runtime GraphQL Query &rarr; Graph Query
 
 #### Examples 
 
 - [Neo4J-GraphQL-JS](https://github.com/neo4j-graphql/neo4j-graphql-js) (GraphQL &rarr; Cypher)<br/>
-...
+Draft state.
 
 #### Pros & Cons
 
-TODO describe
+&plusmn; Custom GraphQL API (magic vs boilerplate)<br/>
+&minus; Custom Migrations
+&plus; no N+1 and derivative problems<br/>
+&plus; Single API layer<br/>
+&plus; Deployment freedom<br/>
+&minus; Performance (runtime query parsing is expensive)
+&plus; Performance (no joins, graphs!)
  
 ### 🔭 4. Relational DB &rarr; GraphQL API
 
 #### Examples
 
 - [PostGraphile](https://www.graphile.org/postgraphile/)<br/>
-...
+Interesting project, many unique ideas. Small team – slow progress.
 
 - [subZero](https://subzero.cloud/)<br/>
-...
+Kinda like cloud-only PostGraphile. Doesn't look like in active development.
 
 - [Super-Graph](https://github.com/dosco/super-graph)<br/>
-...
+Basic API generator. Written in Go (can be &plusmn;).
 
 #### Pros & Cons
 
-TODO describe 
+&plusmn; Automagic GraphQL API (magic vs boilerplate)<br/>
+&plus; Takes care of Migrations<br/>
+&plus; no N+1 and derivative problems<br/>
+&minus; API can't be derived from tables in general. Requires an extra API layer and many meta-data hints in DB.br/>
+&plus; Deployment freedom<br/>
+&minus; Performance (runtime query parsing is expensive)
+&minus; Performance (potential drops for join-heavy cases)
 
 ### 🔭 5. Graph DB &rarr; GraphQL API
 
@@ -98,7 +118,7 @@ Not aware of any
 
 #### Pros & Cons
 
-TODO describe 
+???
 
 ### 🔭 6. Relational DB &larr; Custom Code &rarr; GraphQL API
 
@@ -118,10 +138,10 @@ TODO describe
 - [GraphCMS](https://graphcms.com/).<br/>
 ...
 
-&plus; Automatic GraphQL API
+&plusmn; Automagic GraphQL API (magic vs boilerplate)<br/>
 &plus; Takes care of Migrations
 &plusmn; Performance (potential drops for join-heavy queries)<br/>
-&plus; No extra API layer in simple cases<br/>
+&plus; Single API layer in simple cases<br/>
 &minus; Extra API layer in other cases<br/>
 &minus; Pretty expensive at the moment<br/>
 
@@ -132,9 +152,9 @@ TODO describe
 - [Hasura](https://hasura.io/)<br/>
 ...
 
-&plus; Automatic GraphQL API
+&plusmn; Automagic GraphQL API (magic vs boilerplate)<br/>
 &plus; Takes care of Migrations
-&plus; No extra API layer in simple cases<br/>
+&plus; Single API layer in simple cases<br/>
 &plusmn; Performance (potential drops for join-heavy queries)<br/>
 &minus; Extra API layer in other cases<br/>
 
@@ -147,11 +167,11 @@ Very limited filtering and sorting capabilities.
 
 #### Pros & Cons
 
-&plus; Automatic GraphQL API
+&plusmn; Automagic GraphQL API (magic vs boilerplate)<br/>
 &plus; Takes care of Migrations
 &plus; Distributed transactions<br/>
 &plus; Performance (single GQL query = single DB query)<br/>
-&plus; No extra API layer in simple cases<br/>
+&plus; Single API layer in simple cases<br/>
 &minus; Extra API layer in other cases<br/>
 &minus; Extra language to learn (FQL)<br/>
 
@@ -164,10 +184,10 @@ Very limited filtering and sorting capabilities.
 
 #### Pros & Cons
 
-&plus; Automatic GraphQL API
+&plusmn; Automagic GraphQL API (magic vs boilerplate)<br/>
 &plus; Distributed transactions<br/>
 &plus; Performance (single GQL query = single DB query)<br/>
-&plus; No extra API layer in simple cases<br/>
+&plus; Single API layer in simple cases<br/>
 &minus; Extra API layer in other cases<br/>
 &minus; Potential performance loss for cross API roundtrips (e.g. Dgraph permission resolving)<br/>
 
