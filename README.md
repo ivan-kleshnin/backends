@@ -17,71 +17,144 @@ by Roy Fielding. It's easy to judge with a hindsight, of course, but the point i
 So what next? Many original questions on how to approach API remain and new ones keep emerging. 
 "The perfect API" now looks less achievable then ever, despite all the collective effort of scientists, engineers, programmers and all the other.
 
+Note: some of the following pros and cons are probably vendor- and not category-specific. It's very hard if even possible to completely separate one from another.
+
 ### 🔭 0. Previous state of the art in REST
 
-Examples: [Firebase](https://firebase.google.com/?hl=ru). 
+#### Examples
 
-TODO describe PROS and CONS
-
-### 🔭 1. Custom GraphQL API
-
-Examples: [Apollo-Server](https://www.apollographql.com/docs/apollo-server/). 
-
-TODO describe PROS and CONS
-
-### 🔭 2. Runtime GraphQL Query &rarr; Relational Query
-
-Examples: [Join-Monster](https://github.com/join-monster/join-monster), [SQLMancer](https://github.com/danielrearden/sqlmancer).
-
-TODO describe PROS and CONS
-
-### 🔭 3. Runtime GraphQL Query &rarr; Graph Query
-
-Examples: [Neo4J-GraphQL-JS](https://github.com/neo4j-graphql/neo4j-graphql-js) (GraphQL &rarr; Cypher)
-
-TODO describe PROS and CONS
- 
-### 🔭 4. Relational DB &rarr; GraphQL API
-
-Examples: [PostGraphile](https://www.graphile.org/postgraphile/), [subZero](https://subzero.cloud/), [Super-Graph](https://github.com/dosco/super-graph)
-
-TODO describe PROS and CONS
-
-### 🔭 5. Graph DB &rarr; GraphQL API
-
-(not aware of any)
-
-### 🔭 6. Relational DB &larr; Custom Code &rarr; GraphQL API
-
-Examples: [Prisma](https://www.prisma.io/) (ecosystem)
-
-TODO describe PROS and CONS
-
-### 🔭 7. Relational DB &larr; Custom Data via UI &rarr; GraphQL API
-
-Examples: [GraphCMS](https://graphcms.com/).
-
-TODO describe PROS and CONS
-
-### 🔭 8. Relational DB &larr; GraphQL Types &rarr; GraphQL API
-
-Examples: [Hasura](https://hasura.io/)
-
-TODO describe PROS and CONS
-
-### 🔭 9. Graph DB &larr; GraphQL Types &rarr; GraphQL API
-
-Examples: [FaunaDB](https://fauna.com/).
-
-TODO describe PROS and CONS
-
-### 🔭 10. GraphQL-speaking DBs
-
-Examples: [Dgraph](https://dgraph.io/).
+[Firebase](https://firebase.google.com/?hl=ru)<br/>
+Used to be considered expensive, now seems fine in comparison ;) Realtime out of the box.
 
 #### Pros & Cons
 
-&plus; Performance (single GQL query = single DB query)
+&plus; Automatic REST API
+&minus; Performance (too many queries)
+&minus; Ergonomics (no static typing => no precise docs, nothing like GraphiQL, etc)
+&minus; N+1 problem: Dataloader helps with Child &rarr; Parent, fails in Parent &rarr; Child (filtering is pushed from DB to App)
+
+### 🔭 1. Custom GraphQL API
+
+#### Examples
+
+[Apollo-Server](https://www.apollographql.com/docs/apollo-server/) + [Dataloader](https://github.com/graphql/dataloader)<br/>
+A pretty good and intuitive tool.
+
+#### Pros & Cons
+
+&plusmn; Custom GraphQL API (magic vs boilerplate)
+&plusmn; Custom Migrations (magic vs boilerplate)
+&minus; N+1 problem: Dataloader helps with Child &rarr; Parent, fails in Parent &rarr; Child (filtering is pushed from DB to App)
+&plus; No extra API layer in simple cases<br/>
+&plus; Deployment freedom<br/>
+
+### 🔭 2. Runtime GraphQL Query &rarr; Relational Query
+
+#### Examples
+
+[Join-Monster](https://github.com/join-monster/join-monster)<br/> 
+Seems abandoned. Only basic sorting! Slow, according to feedback. :|
+
+[SQLMancer](https://github.com/danielrearden/sqlmancer)<br/>
+Draft state. Going for a full rewrite a.t.m :|
+
+#### Pros & Cons
+
+TODO describe
+
+### 🔭 3. Runtime GraphQL Query &rarr; Graph Query
+
+#### Examples 
+
+[Neo4J-GraphQL-JS](https://github.com/neo4j-graphql/neo4j-graphql-js) (GraphQL &rarr; Cypher)<br/>
+...
+
+#### Pros & Cons
+
+TODO describe
+ 
+### 🔭 4. Relational DB &rarr; GraphQL API
+
+#### Examples
+
+[PostGraphile](https://www.graphile.org/postgraphile/), [subZero](https://subzero.cloud/), [Super-Graph](https://github.com/dosco/super-graph)<br/>
+...
+
+#### Pros & Cons
+
+TODO describe 
+
+### 🔭 5. Graph DB &rarr; GraphQL API
+
+Examples: (not aware of any)
+
+### 🔭 6. Relational DB &larr; Custom Code &rarr; GraphQL API
+
+#### Examples
+
+[Prisma](https://www.prisma.io/) (ecosystem)<br/>
+...I have little idea what Prisma-2 is and what is provides. They are constantly changing their focus so I lost the track :(
+
+#### Pros & Cons
+
+TODO describe
+
+### 🔭 7. Relational DB &larr; Custom Data via UI &rarr; GraphQL API
+
+#### Examples
+
+[GraphCMS](https://graphcms.com/).<br/>
+...
+
+&plus; Automatic GraphQL API
+&plus; Takes care of Migrations
+&plusmn; Performance (potential drops for join-heavy queries)<br/>
+&plus; No extra API layer in simple cases<br/>
+&minus; Extra API layer in other cases<br/>
+&minus; Pretty expensive at the moment<br/>
+
+### 🔭 8. Relational DB &larr; GraphQL Types &rarr; GraphQL API
+
+#### Examples
+
+[Hasura](https://hasura.io/)<br/>
+...
+
+&plus; Automatic GraphQL API
+&plus; Takes care of Migrations
+&plus; No extra API layer in simple cases<br/>
+&plusmn; Performance (potential drops for join-heavy queries)<br/>
+&minus; Extra API layer in other cases<br/>
+
+### 🔭 9. Graph DB &larr; GraphQL Types &rarr; GraphQL API
+
+#### Examples
+
+[FaunaDB](https://fauna.com/).<br/>
+Very limited filtering and sorting capabilities.
+
+#### Pros & Cons
+
+&plus; Automatic GraphQL API
+&plus; Takes care of Migrations
+&plus; Distributed transactions<br/>
+&plus; Performance (single GQL query = single DB query)<br/>
+&plus; No extra API layer in simple cases<br/>
+&minus; Extra API layer in other cases<br/>
+&minus; Extra language to learn (FQL)<br/>
+
+### 🔭 10. GraphQL-speaking DBs
+
+#### Examples
+
+[Dgraph](https://dgraph.io/)<br/>
+...
+
+#### Pros & Cons
+
+&plus; Automatic GraphQL API
+&plus; Distributed transactions<br/>
+&plus; Performance (single GQL query = single DB query)<br/>
 &plus; No extra API layer in simple cases<br/>
 &minus; Extra API layer in other cases<br/>
 &minus; Potential performance loss for cross API roundtrips (e.g. Dgraph permission resolving)<br/>
