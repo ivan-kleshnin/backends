@@ -17,3 +17,51 @@ by Roy Fielding. It's easy to judge with a hindsight, of course, but the point i
 So what next? Many original questions on how to approach API remain and new ones keep emerging. 
 "The perfect API" now looks less achievable then ever, despite all the collective effort of scientists, engineers, programmers and all the other.
 
+### Custom GraphQL API
+
+Examples: Apollo-Server. 
+
+TODO describe PROS and CONS
+
+### GraphQL -> SQL
+
+Can be runtime or pregenerated.
+
+Examples: JoinMonster, SQLMancer.
+
+TODO describe PROS and CONS
+
+### DB -> GraphQL API
+
+Can be runtime or pregenerated.
+
+Examples: PostGraphile, SubZero
+
+TODO describe PROS and CONS
+
+### DB <- Custom Code -> GraphQL API
+
+Examples: Prisma (ecosystem)
+
+TODO describe PROS and CONS
+
+### DB <- GraphQL Types -> GraphQL API
+
+Mostly pregenerated.
+
+Examples: Hasura
+
+TODO describe PROS and CONS
+
+### GraphQL -> GraphDB
+
+Examples: FaunaDB.
+
+TODO describe PROS and CONS
+
+### GraphQL-speaking DBs
+
+Examples: Dgraph.
+
+TODO describe PROS and CONS
+
