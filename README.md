@@ -34,7 +34,7 @@ Limited filtering and data-modelling capabilities.
 &minus; Ergonomics (no static typing => no precise docs, nothing like GraphiQL, etc)<br/> 
 &minus; N+1 problem: Dataloader helps with Child &rarr; Parent, fails in Parent &rarr; Child (filtering is pushed from DB to App)<br/> 
 
-### 🔭 1. Custom GraphQL API
+### 🔮 1. Custom GraphQL API
 
 #### Examples
 
@@ -50,7 +50,7 @@ Pretty good and intuitive tools.
 &plus; Single API layer<br/>
 &plus; Deployment freedom<br/>
 
-### 🔭 2. Runtime GraphQL Query &rarr; Relational Query
+### 🔮 2. Runtime GraphQL Query &rarr; Relational Query
 
 #### Examples
 
@@ -70,7 +70,7 @@ Draft state. Going for a full rewrite a.t.m :|
 &minus; Performance (runtime query parsing is expensive)<br/> 
 &minus; Performance (potential drops for join-heavy cases)<br/> 
 
-### 🔭 3. Runtime GraphQL Query &rarr; Graph Query
+### 🔮 3. Runtime GraphQL Query &rarr; Graph Query
 
 #### Examples 
 
@@ -87,7 +87,7 @@ Draft state.
 &minus; Performance (runtime query parsing is expensive)<br/> 
 &plus; Performance (no joins, graphs!)<br/> 
  
-### 🔭 4. Relational DB &rarr; GraphQL API
+### 🔮 4. Relational DB &rarr; GraphQL API
 
 #### Examples
 
@@ -110,7 +110,7 @@ Basic API generator. Written in Go (can be &plusmn;).
 &minus; Performance (runtime query parsing is expensive)<br/> 
 &minus; Performance (potential drops for join-heavy cases)<br/> 
 
-### 🔭 5. Graph DB &rarr; GraphQL API
+### 🔮 5. Graph DB &rarr; GraphQL API
 
 #### Examples
 
@@ -120,7 +120,7 @@ Not aware of any
 
 ???
 
-### 🔭 6. Relational DB &larr; Custom Code &rarr; GraphQL API
+### 🔮 6. Relational DB &larr; Custom Code &rarr; GraphQL API
 
 #### Examples
 
@@ -132,7 +132,7 @@ Got $$$ investments.
 
 TODO describe
 
-### 🔭 7. Relational DB &larr; Custom Data via UI &rarr; GraphQL API
+### 🔮 7. Relational DB &larr; Custom Data via UI &rarr; GraphQL API
 
 #### Examples
 
@@ -146,7 +146,7 @@ TODO describe
 &minus; Extra API layer in other cases<br/>
 &minus; Pretty expensive at the moment<br/>
 
-### 🔭 8. Relational DB &larr; GraphQL Types &rarr; GraphQL API
+### 🔮 8. Relational DB &larr; GraphQL Types &rarr; GraphQL API
 
 #### Examples
 
@@ -163,7 +163,7 @@ Good docs (esp. in comparison), many examples, established a community.
 &plus; Deployment freedom<br/>
 &minus; Pretty expensive at the moment<br/>
 
-### 🔭 9. Graph DB &larr; GraphQL Types &rarr; GraphQL API
+### 🔮 9. Graph DB &larr; GraphQL Types &rarr; GraphQL API
 
 #### Examples
 
@@ -180,7 +180,7 @@ Very limited filtering and sorting capabilities.
 &minus; Extra API layer in other cases<br/>
 &minus; Extra language to learn (FQL)<br/>
 
-### 🔭 10. GraphQL-speaking DBs
+### 🔮 10. GraphQL-speaking DBs
 
 #### Examples
 
