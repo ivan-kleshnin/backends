@@ -17,21 +17,25 @@ by Roy Fielding. It's easy to judge with a hindsight, of course, but the point i
 So what next? Many original questions on how to approach API remain and new ones keep emerging. 
 "The perfect API" now looks less achievable then ever, despite all the collective effort of scientists, engineers, programmers and all the other.
 
+### 🔭 0. Previous state of the art in REST
+
+Examples: [Firebase](https://firebase.google.com/?hl=ru). 
+
+TODO describe PROS and CONS
+
 ### 🔭 1. Custom GraphQL API
 
-Examples: Apollo-Server. 
+Examples: [Apollo-Server](https://www.apollographql.com/docs/apollo-server/). 
 
 TODO describe PROS and CONS
 
 ### 🔭 2. Runtime GraphQL Query &rarr; Relational Query
 
-Examples: JoinMonster, SQLMancer.
+Examples: [Join-Monster](https://github.com/join-monster/join-monster), [SQLMancer](https://github.com/danielrearden/sqlmancer).
 
 TODO describe PROS and CONS
 
 ### 🔭 3. Runtime GraphQL Query &rarr; Graph Query
-
-Can be runtime or pregenerated.
 
 Examples: [Neo4J-GraphQL-JS](https://github.com/neo4j-graphql/neo4j-graphql-js) (GraphQL &rarr; Cypher)
 
@@ -39,9 +43,7 @@ TODO describe PROS and CONS
  
 ### 🔭 4. Relational DB &rarr; GraphQL API
 
-Can be runtime or pregenerated.
-
-Examples: PostGraphile, SubZero, [Super-Graph](https://github.com/dosco/super-graph)
+Examples: [PostGraphile](https://www.graphile.org/postgraphile/), [subZero](https://subzero.cloud/), [Super-Graph](https://github.com/dosco/super-graph)
 
 TODO describe PROS and CONS
 
@@ -51,7 +53,7 @@ TODO describe PROS and CONS
 
 ### 🔭 6. Relational DB &larr; Custom Code &rarr; GraphQL API
 
-Examples: Prisma (ecosystem)
+Examples: [Prisma](https://www.prisma.io/) (ecosystem)
 
 TODO describe PROS and CONS
 
@@ -63,15 +65,13 @@ TODO describe PROS and CONS
 
 ### 🔭 8. Relational DB &larr; GraphQL Types &rarr; GraphQL API
 
-Mostly pregenerated.
-
-Examples: Hasura
+Examples: [Hasura](https://hasura.io/)
 
 TODO describe PROS and CONS
 
 ### 🔭 9. Graph DB &larr; GraphQL Types &rarr; GraphQL API
 
-Examples: FaunaDB.
+Examples: [FaunaDB](https://fauna.com/).
 
 TODO describe PROS and CONS
 
