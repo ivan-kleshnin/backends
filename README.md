@@ -47,7 +47,7 @@ Examples: PostGraphile, SubZero, [Super-Graph](https://github.com/dosco/super-gr
 
 TODO describe PROS and CONS
 
-### 🔭 DB &larr; Custom Code &rarr; GraphQL API
+### 🔭 Relational DB &larr; Custom Code &rarr; GraphQL API
 
 Examples: Prisma (ecosystem)
 
