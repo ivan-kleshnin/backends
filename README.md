@@ -53,7 +53,7 @@ Examples: Prisma (ecosystem)
 
 TODO describe PROS and CONS
 
-### 🔭 DB &larr; GraphQL Types &rarr; GraphQL API
+### 🔭 Relational DB &larr; GraphQL Types &rarr; GraphQL API
 
 Mostly pregenerated.
 
@@ -61,7 +61,7 @@ Examples: Hasura
 
 TODO describe PROS and CONS
 
-### 🔭 GraphQL &rarr; GraphDB
+### 🔭 Graph DB &larr; GraphQL Types &rarr;  GraphQL API
 
 Examples: FaunaDB.
 
