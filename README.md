@@ -29,10 +29,10 @@ Limited filtering and data-modelling capabilities.
 
 #### Pros & Cons
 
-&plus; Automatic REST API
-&minus; Performance (too many queries)
-&minus; Ergonomics (no static typing => no precise docs, nothing like GraphiQL, etc)
-&minus; N+1 problem: Dataloader helps with Child &rarr; Parent, fails in Parent &rarr; Child (filtering is pushed from DB to App)
+&plus; Automatic REST API<br/> 
+&minus; Performance (too many queries)<br/> 
+&minus; Ergonomics (no static typing => no precise docs, nothing like GraphiQL, etc)<br/> 
+&minus; N+1 problem: Dataloader helps with Child &rarr; Parent, fails in Parent &rarr; Child (filtering is pushed from DB to App)<br/> 
 
 ### 🔭 1. Custom GraphQL API
 
