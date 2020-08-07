@@ -43,10 +43,10 @@ Pretty good and intuitive tools.
 
 #### Pros & Cons
 
-&plusmn; Custom GraphQL API (magic vs boilerplate)
-&minus; Custom Migrations
-&minus; GraphQL to SQL is too complex to inline in your business logic
-&minus; N+1 problem: Dataloader helps with Child &rarr; Parent, fails in Parent &rarr; Child (filtering is pushed from DB to App)
+&plusmn; Custom GraphQL API (magic vs boilerplate)<br/>
+&minus; Custom Migrations<br/>
+&minus; GraphQL to SQL is too complex to inline in your business logic<br/>
+&minus; N+1 problem: Dataloader helps with Child &rarr; Parent, fails in Parent &rarr; Child (filtering is pushed from DB to App)<br/>
 &plus; Single API layer<br/>
 &plus; Deployment freedom<br/>
 
