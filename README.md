@@ -19,7 +19,7 @@ So what next? Many original questions on how to approach API remain and new ones
 
 TODO: redefine pros and cons per vendor, not per category. Many of pros and cons are vendor-specific.
 
-### 🔭 0. Previous state of the art in REST
+### 🔮 0. Previous state of the art in REST
 
 #### Examples
 
