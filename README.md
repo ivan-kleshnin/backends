@@ -79,7 +79,12 @@ TODO describe PROS and CONS
 
 Examples: [Dgraph](https://dgraph.io/).
 
-TODO describe PROS and CONS
+#### Pros & Cons
+
+&plus; Performance (single GQL query = single DB query)
+&plus; No extra API layer in simple cases<br/>
+&minus; Extra API layer in other cases<br/>
+&minus; Potential performance loss for cross API roundtrips (e.g. Dgraph permission resolving)<br/>
 
 ---
 
