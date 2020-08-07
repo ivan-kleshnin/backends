@@ -17,7 +17,7 @@ by Roy Fielding. It's easy to judge with a hindsight, of course, but the point i
 So what next? Many original questions on how to approach API remain and new ones keep emerging. 
 "The perfect API" now looks less achievable then ever, despite all the collective effort of scientists, engineers, programmers and all the other.
 
-Note: some of the following pros and cons are probably vendor- and not category-specific. It's very hard if even possible to completely separate one from another.
+TODO: redefine pros and cons per vendor, not per category. Many of pros and cons are vendor-specific.
 
 ### 🔭 0. Previous state of the art in REST
 
@@ -29,7 +29,7 @@ Limited filtering and data-modelling capabilities.
 
 #### Pros & Cons
 
-&plus; Automatic REST API<br/> 
+&plusmn; Automatic REST API<br/> 
 &minus; Performance (too many queries)<br/> 
 &minus; Ergonomics (no static typing => no precise docs, nothing like GraphiQL, etc)<br/> 
 &minus; N+1 problem: Dataloader helps with Child &rarr; Parent, fails in Parent &rarr; Child (filtering is pushed from DB to App)<br/> 
@@ -45,8 +45,8 @@ Pretty good and intuitive tools.
 
 &plusmn; Custom GraphQL API (magic vs boilerplate)
 &minus; Custom Migrations
-&minus; N+1 problem: Dataloader helps with Child &rarr; Parent, fails in Parent &rarr; Child (filtering is pushed from DB to App)
 &minus; GraphQL to SQL is too complex to inline in your business logic
+&minus; N+1 problem: Dataloader helps with Child &rarr; Parent, fails in Parent &rarr; Child (filtering is pushed from DB to App)
 &plus; Single API layer<br/>
 &plus; Deployment freedom<br/>
 
@@ -63,7 +63,7 @@ Draft state. Going for a full rewrite a.t.m :|
 #### Pros & Cons
 
 &plusmn; Custom GraphQL API (magic vs boilerplate)<br/>
-&minus; Custom Migrations
+&minus; Custom Migrations<br/>
 &plus; no N+1 and derivative problems<br/>
 &plus; Single API layer<br/>
 &plus; Deployment freedom<br/>
@@ -81,7 +81,7 @@ Draft state.
 
 &plusmn; Custom GraphQL API (magic vs boilerplate)<br/>
 &minus; Custom Migrations<br/> 
-&plus; no N+1 and derivative problems<br/>
+&plus; No N+1 and derivative problems<br/>
 &plus; Single API layer<br/>
 &plus; Deployment freedom<br/>
 &minus; Performance (runtime query parsing is expensive)<br/> 
@@ -104,7 +104,7 @@ Basic API generator. Written in Go (can be &plusmn;).
 
 &plusmn; Automagic GraphQL API (magic vs boilerplate)<br/>
 &plus; Takes care of Migrations<br/>
-&plus; no N+1 and derivative problems<br/>
+&plus; No N+1 and derivative problems<br/>
 &minus; API can't be derived from tables in general. Requires an extra API layer and many meta-data hints in DB.<br/>
 &plus; Deployment freedom<br/>
 &minus; Performance (runtime query parsing is expensive)<br/> 
