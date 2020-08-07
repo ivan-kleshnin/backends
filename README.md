@@ -17,13 +17,13 @@ by Roy Fielding. It's easy to judge with a hindsight, of course, but the point i
 So what next? Many original questions on how to approach API remain and new ones keep emerging. 
 "The perfect API" now looks less achievable then ever, despite all the collective effort of scientists, engineers, programmers and all the other.
 
-### Custom GraphQL API
+### 🔭 Custom GraphQL API
 
 Examples: Apollo-Server. 
 
 TODO describe PROS and CONS
 
-### GraphQL &rarr; SQL (+ alike relational)
+### 🔭 GraphQL &rarr; SQL (+ alike relational)
 
 Can be runtime or pregenerated.
 
@@ -31,15 +31,15 @@ Examples: JoinMonster, SQLMancer.
 
 TODO describe PROS and CONS
 
-### GraphQL &rarr; Cypher (+ alike graph)
+### 🔭 GraphQL &rarr; Cypher (+ alike graph)
 
 Can be runtime or pregenerated.
 
 Examples: [Neo4J-GraphQL-JS](https://github.com/neo4j-graphql/neo4j-graphql-js)
 
 TODO describe PROS and CONS
-
-### DB &rarr; GraphQL API
+ 
+### 🔭 DB &rarr; GraphQL API
 
 Can be runtime or pregenerated.
 
@@ -47,13 +47,13 @@ Examples: PostGraphile, SubZero, [Super-Graph](https://github.com/dosco/super-gr
 
 TODO describe PROS and CONS
 
-### DB &larr; Custom Code &rarr; GraphQL API
+### 🔭 DB &larr; Custom Code &rarr; GraphQL API
 
 Examples: Prisma (ecosystem)
 
 TODO describe PROS and CONS
 
-### DB &larr; GraphQL Types &rarr; GraphQL API
+### 🔭 DB &larr; GraphQL Types &rarr; GraphQL API
 
 Mostly pregenerated.
 
@@ -61,15 +61,17 @@ Examples: Hasura
 
 TODO describe PROS and CONS
 
-### GraphQL &rarr; GraphDB
+### 🔭 GraphQL &rarr; GraphDB
 
 Examples: FaunaDB.
 
 TODO describe PROS and CONS
 
-### GraphQL-speaking DBs
+### 🔭 GraphQL-speaking DBs
 
 Examples: Dgraph.
 
 TODO describe PROS and CONS
+
+[graphql]: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/graphql/graphql.png
 
