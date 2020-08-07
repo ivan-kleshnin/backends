@@ -52,10 +52,10 @@ A pretty good and intuitive tool.
 
 #### Examples
 
-[Join-Monster](https://github.com/join-monster/join-monster)<br/> 
+- [Join-Monster](https://github.com/join-monster/join-monster)<br/> 
 Seems abandoned. Only basic sorting! Slow, according to feedback. :|
 
-[SQLMancer](https://github.com/danielrearden/sqlmancer)<br/>
+- [SQLMancer](https://github.com/danielrearden/sqlmancer)<br/>
 Draft state. Going for a full rewrite a.t.m :|
 
 #### Pros & Cons
@@ -66,7 +66,7 @@ TODO describe
 
 #### Examples 
 
-[Neo4J-GraphQL-JS](https://github.com/neo4j-graphql/neo4j-graphql-js) (GraphQL &rarr; Cypher)<br/>
+- [Neo4J-GraphQL-JS](https://github.com/neo4j-graphql/neo4j-graphql-js) (GraphQL &rarr; Cypher)<br/>
 ...
 
 #### Pros & Cons
@@ -77,7 +77,13 @@ TODO describe
 
 #### Examples
 
-[PostGraphile](https://www.graphile.org/postgraphile/), [subZero](https://subzero.cloud/), [Super-Graph](https://github.com/dosco/super-graph)<br/>
+- [PostGraphile](https://www.graphile.org/postgraphile/)<br/>
+...
+
+- [subZero](https://subzero.cloud/)<br/>
+...
+
+- [Super-Graph](https://github.com/dosco/super-graph)<br/>
 ...
 
 #### Pros & Cons
@@ -86,14 +92,20 @@ TODO describe
 
 ### 🔭 5. Graph DB &rarr; GraphQL API
 
-Examples: (not aware of any)
+#### Examples
+
+Not aware of any
+
+#### Pros & Cons
+
+TODO describe 
 
 ### 🔭 6. Relational DB &larr; Custom Code &rarr; GraphQL API
 
 #### Examples
 
-[Prisma](https://www.prisma.io/) (ecosystem)<br/>
-...I have little idea what Prisma-2 is and what is provides. They are constantly changing their focus so I lost the track :(
+- [Prisma + ecosystem](https://www.prisma.io/)<br/>
+...I have little idea what Prisma-2 is and what is provides. They are constantly changing their focus so I lost the track and interest :(
 
 #### Pros & Cons
 
@@ -103,7 +115,7 @@ TODO describe
 
 #### Examples
 
-[GraphCMS](https://graphcms.com/).<br/>
+- [GraphCMS](https://graphcms.com/).<br/>
 ...
 
 &plus; Automatic GraphQL API
@@ -117,7 +129,7 @@ TODO describe
 
 #### Examples
 
-[Hasura](https://hasura.io/)<br/>
+- [Hasura](https://hasura.io/)<br/>
 ...
 
 &plus; Automatic GraphQL API
@@ -130,7 +142,7 @@ TODO describe
 
 #### Examples
 
-[FaunaDB](https://fauna.com/).<br/>
+- [FaunaDB](https://fauna.com/)<br/>
 Very limited filtering and sorting capabilities.
 
 #### Pros & Cons
@@ -147,7 +159,7 @@ Very limited filtering and sorting capabilities.
 
 #### Examples
 
-[Dgraph](https://dgraph.io/)<br/>
+- [Dgraph](https://dgraph.io/)<br/>
 ...
 
 #### Pros & Cons
