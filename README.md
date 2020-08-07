@@ -23,7 +23,7 @@ Examples: Apollo-Server.
 
 TODO describe PROS and CONS
 
-### GraphQL -> SQL
+### GraphQL &rarr; SQL
 
 Can be runtime or pregenerated.
 
@@ -31,7 +31,7 @@ Examples: JoinMonster, SQLMancer.
 
 TODO describe PROS and CONS
 
-### DB -> GraphQL API
+### DB &rarr; GraphQL API
 
 Can be runtime or pregenerated.
 
@@ -39,13 +39,13 @@ Examples: PostGraphile, SubZero
 
 TODO describe PROS and CONS
 
-### DB <- Custom Code -> GraphQL API
+### DB &larr; Custom Code &rarr; GraphQL API
 
 Examples: Prisma (ecosystem)
 
 TODO describe PROS and CONS
 
-### DB <- GraphQL Types -> GraphQL API
+### DB &larr; GraphQL Types &rarr; GraphQL API
 
 Mostly pregenerated.
 
@@ -53,7 +53,7 @@ Examples: Hasura
 
 TODO describe PROS and CONS
 
-### GraphQL -> GraphDB
+### GraphQL &rarr; GraphDB
 
 Examples: FaunaDB.
 
