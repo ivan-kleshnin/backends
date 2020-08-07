@@ -23,19 +23,17 @@ Examples: Apollo-Server.
 
 TODO describe PROS and CONS
 
-### 🔭 2. GraphQL &rarr; SQL (+ alike relational)
-
-Can be runtime or pregenerated.
+### 🔭 2. Runtime GraphQL Query &rarr; Relational Query
 
 Examples: JoinMonster, SQLMancer.
 
 TODO describe PROS and CONS
 
-### 🔭 3. GraphQL &rarr; Cypher (+ alike graph)
+### 🔭 3. Runtime GraphQL Query &rarr; Graph Query
 
 Can be runtime or pregenerated.
 
-Examples: [Neo4J-GraphQL-JS](https://github.com/neo4j-graphql/neo4j-graphql-js)
+Examples: [Neo4J-GraphQL-JS](https://github.com/neo4j-graphql/neo4j-graphql-js) (GraphQL &rarr; Cypher)
 
 TODO describe PROS and CONS
  
