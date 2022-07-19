@@ -1,4 +1,4 @@
-# High-level backend development is an open-problem
+# High-level backend development is an open problem
 
 There are multiple approaches to develop a backend/API to your Web or Mobile app nowadays.
 My goal here is to structure and categorize them to hopefully get a more precise picture
