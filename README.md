@@ -208,6 +208,6 @@ The question of which-to-use-when is not addressed in docs :shrug:
 
 ## Updates
 
-- [Supabase](htts://supabase.com) is a Firebase rival. RESTp & GraphQL API & SDK. TypeScript support is [WIP](https://github.com/supabase/supabase-js/issues/170).
+- [Supabase](https://supabase.com) is a Firebase rival. RESTp & GraphQL API & SDK. TypeScript support is [WIP](https://github.com/supabase/supabase-js/issues/170).
 - [NHost](https://nhost.io/) is built on top of Hasura, Hasura-Auth and S3. No self-hosting option. Does not support URQL [a.t.m](https://issuehint.com/issue/nhost/nhost/271)
 - [AppWrite](https://appwrite.io/) is another Firebase rival. Does not support GraphQL [a.t.m](https://github.com/appwrite/appwrite/discussions/1280)
