@@ -18,6 +18,7 @@ So what next? Many original questions on how to approach API remain and new ones
 "The perfect API" now looks less achievable then ever, despite all the collective effort of scientists, engineers, programmers and all the other.
 
 TODO: redefine pros and cons per vendor, not per category. Many of pros and cons are vendor-specific.
+Also categorization is unsolvable in general as most popular vendors are quite unique in their feature sets.
 
 ### 🔮 0. Previous state of the art in REST
 
@@ -120,17 +121,16 @@ Not aware of any
 
 ???
 
-### 🔮 6. Relational DB &larr; Custom Code &rarr; GraphQL API
+### 🔮 6. Prisma
 
-#### Examples
-
-👉 [Prisma + ecosystem](https://www.prisma.io/)<br/>
-I have little idea what Prisma-2 is and what is provides. They are constantly changing their focus so I lost the track and interest :(
-Got $$$ investments, spent them on site design probably :shrug:
+[Prisma](https://prisma.io/) is a high-level, database-agnostic, typescript-friendly ORM + Migration tool + Data UI. 
+Generates a typed DB client from DSL models and migrations from DSL model diffs. Reusable TS types are also generated. CLI experience is pretty good with helpful error messages. API is also good: properly typed, autocompletion works. I've noticed some bugs, e.g. I have to restart IDE (Webstorm) to pick the correct types after a migration. Data UI is way too simplistic a.t.m and should not be considered a feature. So basically it's a good ORM + migration tool + ecosystem so far.
+Ecosystem: Nexus, Amplication, Prismal Platform (cloud). 
 
 #### Pros & Cons
 
-TODO describe
+&plus; Mid-level, typed DB handling.
+&minus; Yet another DSL, adds to the "model/type" DRY fatique. Does not generate API layer by itself. There're experimental projects (Nexus, etc) allowing to derive API from Prisma DSL but they are too immature and incomplete (and rely on another codegen layer 😞) a.t.m.
 
 ### 🔮 7. Relational DB &larr; Custom Data via UI &rarr; GraphQL API
 
