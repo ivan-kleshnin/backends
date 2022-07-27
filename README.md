@@ -129,8 +129,8 @@ Ecosystem: Nexus, Amplication, Prismal Platform (cloud).
 
 #### Pros & Cons
 
-&plus; Mid-level, typed DB handling.
-&minus; Yet another DSL, adds to the "model/type" DRY fatique. Does not generate API layer by itself. There're experimental projects (Nexus, etc) allowing to derive API from Prisma DSL but they are too immature and incomplete (and rely on another codegen layer 😞) a.t.m.
+&plus; Mid-level, typed DB handling.<br/>
+&minus; Yet another DSL, adds to the "model/type" DRY fatique. Does not generate API layer by itself. There're experimental projects (Nexus, etc) allowing to derive API from Prisma DSL but they are too immature and incomplete (and rely on another codegen layer 😞) a.t.m.<br/>
 
 ### 🔮 7. Relational DB &larr; Custom Data via UI &rarr; GraphQL API
 
@@ -150,7 +150,7 @@ Good UI. Kinda buggy. Pretty expensive at the moment.<br/>
 #### Examples
 
 👉 [Hasura](https://hasura.io/)<br/>
-Interesting project. Seem to know their stuff. Got $$$ investments, reinvested in development (unlike Prisma)<br/>
+Interesting project. Seem to know their stuff. Got >100M investments...<br/>
 Gains traction recently. Good docs in comparison, many examples, established a community.<br/>
 
 &plusmn; Automagic GraphQL API (magic vs boilerplate)<br/>
