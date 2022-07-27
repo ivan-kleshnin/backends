@@ -213,3 +213,7 @@ The question of which-to-use-when is not addressed in docs :shrug:
 - [AppWrite](https://appwrite.io/) is another Firebase rival. Does not support GraphQL [a.t.m](https://github.com/appwrite/appwrite/discussions/1280)
 - [Amplication](https://amplication.com/) is an API & Auth code generator (GraphQL and REST). Models can be created in UI and CLI (imperatively :thinking:)
 (reconsider if switches to DSL)
+
+## Other's people Comparisons
+
+[Perferct DB in 2022](https://dev.to/jdgamble555/firebase-is-dead-what-is-the-perfect-database-in-2022-4o9a)
