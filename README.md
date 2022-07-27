@@ -125,7 +125,7 @@ Not aware of any
 
 [Prisma](https://prisma.io/) is a high-level, database-agnostic, typescript-friendly ORM + Migration tool + Data UI. 
 Generates a typed DB client from DSL models and migrations from DSL model diffs. Reusable TS types are also generated. CLI experience is pretty good with helpful error messages. API is also good: properly typed, autocompletion works. I've noticed some bugs, e.g. I have to restart IDE (Webstorm) to pick the correct types after a migration. Data UI is way too simplistic a.t.m and should not be considered a feature. So basically it's a good ORM + migration tool + ecosystem so far.
-Ecosystem: Nexus, Amplication, Prismal Platform (cloud). 
+Ecosystem: Nexus, Amplication, Prisma Platform (cloud). 
 
 #### Pros & Cons
 
