@@ -213,6 +213,8 @@ The question of which-to-use-when is not addressed in docs :shrug:
 - [AppWrite](https://appwrite.io/) is another Firebase rival. Does not support GraphQL [a.t.m](https://github.com/appwrite/appwrite/discussions/1280)
 - [Amplication](https://amplication.com/) is an API & Auth code generator (GraphQL and REST). Models can be created in UI and CLI (imperatively :thinking:)
 (reconsider if switches to DSL)
+- [EdgeDB](https://www.edgedb.com/) -- ??
+- [8base](https://www.8base.com/)-- ??
 
 ## Other's people Comparisons
 
